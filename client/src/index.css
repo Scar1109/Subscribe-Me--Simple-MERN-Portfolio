@@ -1,0 +1,98 @@
+body {
+    background: #000000;
+    overflow-x: hidden;
+}
+
+.profile__Photo img {
+    width: 80%;
+    height: auto;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile__description {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile__Photo {
+    flex: 1.1;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__description h1 {
+    margin: 0;
+    color: #ffff;
+    font-size: 30px;
+    line-height: 72px;
+    font-weight: 800;
+    font-family: Poppins, Arial, sans-serif;
+    text-align: left;
+}
+
+.profile__description h2 {
+    color: #ffff;
+    font-size: 90px;
+    line-height: 82px;
+    font-weight: 800;
+    margin: 0;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+.profile__description span {
+    color: #ffbd39;
+}
+
+.profile__description p {
+    margin: 0;
+    color: #ffff;
+    font-size: 40px;
+    line-height: 72px;
+    font-family: Poppins, Arial, sans-serif;
+    text-align: left;
+    margin: 20px 0 0 5px;
+}
+
+.profile__subscribe-btn {
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: #c00;
+    color: #fff;
+    text-transform: uppercase;
+    transition: opacity 0.4s linear;
+    visibility: 0.4s linear;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.profile__social{
+    display: flex;
+    gap: 10px;
+    margin: 10px 10px 0 50px;
+}
+
+.profile__social a img {
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.profile__btn-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
