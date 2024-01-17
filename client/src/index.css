@@ -22,6 +22,7 @@ body {
 }
 
 .profile__Photo {
+    margin-top: 20px;
     flex: 1.1;
     display: flex;
     padding: 20px;
@@ -32,8 +33,8 @@ body {
 .profile__description h1 {
     margin: 0;
     color: #ffff;
-    font-size: 30px;
-    line-height: 72px;
+    font-size: 45px;
+    line-height: 87px;
     font-weight: 800;
     font-family: Poppins, Arial, sans-serif;
     text-align: left;
@@ -41,8 +42,8 @@ body {
 
 .profile__description h2 {
     color: #ffff;
-    font-size: 90px;
-    line-height: 82px;
+    font-size: 120px;
+    line-height: 112px;
     font-weight: 800;
     margin: 0;
     font-family: Poppins, Arial, sans-serif;
@@ -55,7 +56,7 @@ body {
 .profile__description p {
     margin: 0;
     color: #ffff;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 72px;
     font-family: Poppins, Arial, sans-serif;
     text-align: left;
@@ -71,23 +72,22 @@ body {
     transition: opacity 0.4s linear;
     visibility: 0.4s linear;
     font-family: sans-serif;
-    font-size: 18px;
-    margin: 5px 0 0 5px;
+    font-size: 22px;
+    margin: 15px 0 0 5px;
     border: none;
     outline: none;
     cursor: pointer;
 }
 
-.profile__social{
+.profile__social {
     display: flex;
     gap: 10px;
-    margin: 10px 10px 0 50px;
+    margin: 20px 10px 0 50px;
 }
 
 .profile__social a img {
-    top: -20px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     object-fit: contain;
 }
 
@@ -95,4 +95,126 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 768px) {
+    .profile {
+        flex-direction: column-reverse;
+    }
+
+    .profile__description,
+    .profile__Photo {
+        flex: 1; /* Make both sections take full width on smaller screens */
+    }
+
+    .profile__Photo {
+        width: 50%;
+        margin-left: 20%;
+    }
+
+    .profile__description h1 {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .profile__description h2 {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .profile__description p {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+
+    .profile__subscribe-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        margin: 10px 0 0 0;
+    }
+
+    .profile__social {
+        margin: 10px 0 0 0;
+        justify-content: center;
+    }
+
+    .profile__social a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile__btn-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aos-animate {
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
+
+@media screen and (min-resolution: 120dpi) and (max-resolution: 130dpi) {
+    .profile__Photo img {
+        width: 80%;
+        height: auto;
+    }
+
+    .profile__Photo {
+        margin-top: 10px;
+        padding: 20px;
+    }
+    
+    .profile__description h1 {
+        font-size: 30px;
+        line-height: 72px;
+    }
+    
+    .profile__description h2 {
+        font-size: 90px;
+        line-height: 82px;
+    }
+    
+    .profile__description p {
+        font-size: 40px;
+        line-height: 72px;
+        margin: 20px 0 0 5px;
+    }
+    
+    .profile__subscribe-btn {
+        padding: 15px 25px;
+        font-size: 18px;
+        margin: 5px 0 0 5px;
+    }
+    
+    .profile__social {
+        margin: 10px 10px 0 50px;
+    }
+    
+    .profile__social a img {
+        top: -20px;
+        width: 40px;
+        height: 40px;
+    }
+    
 }

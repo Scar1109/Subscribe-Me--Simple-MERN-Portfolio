@@ -3,11 +3,15 @@ import profilePhoto from "../assets/images/new logo.png";
 import githubImg from "../assets/icons/github.png";
 import linkedinImg from "../assets/icons/linkedin.png";
 import instagramImg from "../assets/icons/instagram.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function LandingPage() {
     return (
         <div className="profile">
-            <div className="profile__description">
+            <div className="profile__description" data-aos="fade-right" data-aos-duration="1000" >
                 <div>
                     <h1>Hello! </h1>
                     <h2>
@@ -38,7 +42,7 @@ function LandingPage() {
                     </div>
                 </div>
             </div>
-            <div className="profile__Photo">
+            <div className="profile__Photo" data-aos="zoom-out" data-aos-duration="1000" >
                 <img src={profilePhoto} alt="profile" />
             </div>
         </div>
