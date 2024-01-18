@@ -29,13 +29,13 @@ function LandingPage() {
                             </button>
                         </a>
                         <div className="profile__social">
-                            <a href="/">
-                                <img src={githubImg} alt="github" />
+                            <a href="https://github.com/Scar1109" target="_blank">
+                                <img src={githubImg} alt="github"  />
                             </a>
-                            <a href="/">
+                            <a href="https://linkedin.com/in/kaveendinethma" target="_blank">
                                 <img src={linkedinImg} alt="linkedin" />
                             </a>
-                            <a href="/">
+                            <a href="https://www.instagram.com/kavee_dineth/" target="_blank">
                                 <img src={instagramImg} alt="instagram" />
                             </a>
                         </div>
