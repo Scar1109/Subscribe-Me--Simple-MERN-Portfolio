@@ -5,13 +5,18 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd client && npm start\" \"nodemon server.js\""
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "dev" : "concurrently \"cd client && npm start\" \"nodemon server.js\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^8.2.2",
-    "express": "^4.18.2",
-    "nodemon": "^3.0.3"
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "nodemon": "^3.0.2"
   }
 }
