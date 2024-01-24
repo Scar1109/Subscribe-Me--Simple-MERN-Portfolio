@@ -1,8 +1,8 @@
 import React from "react";
-import profilePhoto from "../assets/images/new logo.png";
-import githubImg from "../assets/icons/github.png";
-import linkedinImg from "../assets/icons/linkedin.png";
-import instagramImg from "../assets/icons/instagram.png";
+import profilePhoto from "../assets/new logo.png";
+import githubImg from "../assets/github.png";
+import linkedinImg from "../assets/linkedin.png";
+import instagramImg from "../assets/instagram.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
