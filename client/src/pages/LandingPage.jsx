@@ -1,8 +1,4 @@
-import React from "react";
-import profilePhoto from "../assets/new logo.png";
-import githubImg from "../assets/github.png";
-import linkedinImg from "../assets/linkedin.png";
-import instagramImg from "../assets/instagram.png";
+import {Github, Linkedin, Logo, Instagram} from "../assets"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -30,20 +26,20 @@ function LandingPage() {
                         </a>
                         <div className="profile__social">
                             <a href="https://github.com/Scar1109" target="_blank" rel="noreferrer">
-                                <img src={githubImg} alt="github"  />
+                                <img src={Github} alt="github"  />
                             </a>
                             <a href="https://linkedin.com/in/kaveendinethma" target="_blank" rel="noreferrer">
-                                <img src={linkedinImg} alt="linkedin" />
+                                <img src={Linkedin} alt="linkedin" />
                             </a>
                             <a href="https://www.instagram.com/kavee_dineth/" target="_blank" rel="noreferrer">
-                                <img src={instagramImg} alt="instagram" />
+                                <img src={Instagram} alt="instagram" />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="profile__Photo" data-aos="zoom-out" data-aos-duration="1000" >
-                <img src={profilePhoto} alt="profile" />
+                <img src={Logo} alt="profile" />
             </div>
         </div>
     );
